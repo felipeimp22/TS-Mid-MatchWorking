@@ -12,7 +12,7 @@ const options: mongoose.ConnectOptions = {
   socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
   family: 4 // Use IPv4, skip trying IPv6
 };
-// mongoose.connect('mongodb://localhost:27017/paralelo', options).then(
+// mongoose.connect('mongodb://localhost:27017/matchworking', options).then(
   //To test local: ipconfig or ifconfig and get ip of  Ethernet adapter vEthernet (Default Switch) and IPV4 or Ethernet adapter vEthernet (WSL):
 mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`, options).then(
 
