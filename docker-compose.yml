@@ -1,0 +1,6 @@
+version: '3'
+services:
+  paralelo-user-microservice:
+    image: matchWorking-user-microservice:latest
+    ports:
+      - "80:80"
